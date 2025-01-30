@@ -8118,6 +8118,7 @@
       page-break-after: avoid; }
     @page {
       size: a3; }
+
     body {
       min-width: 992px !important; }
     .container {
@@ -8148,7 +8149,7 @@
   body {
     font-family: "Poppins", Arial, sans-serif;
     background: #000000;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 1.8;
     font-weight: 400;
     color: #999999; }
@@ -8157,6 +8158,22 @@
       position: fixed;
       height: 100%;
       width: 100%; }
+    body.day-mode {
+      background-color: #ffffff;
+      color: #000000; }
+    body.night-mode {
+      background-color: #000000;
+      color: #ffffff; }
+
+      /* Additional Style to other elements */
+
+    .day-mode .navbar{
+      background-color: #f8f9fa !important;
+    }
+
+    .night-mode .navbar{
+      background-color: #343a40 !important;
+    }
   
   a {
     -webkit-transition: .3s all ease;
@@ -9702,5 +9719,4 @@
       stroke-dashoffset: -35px; }
     100% {
       stroke-dasharray: 89, 200;
-      stroke-dashoffset: -136px; } }
-  
+      stroke-dashoffset: -136px; } }  
