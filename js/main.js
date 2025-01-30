@@ -3,6 +3,21 @@
  	easing: 'slide'
  });
 
+ document.addEventListener('DOMContentLoaded', function() {
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    themeToggle.addEventListener('click', function() {
+        if (body.classList.contains('day-mode')) {
+            body.classList.remove('day-mode');
+            body.classList.add('night-mode');
+        } else {
+            body.classList.remove('night-mode');
+            body.classList.add('day-mode');
+        }
+    });
+});
+
 (function($) {
 
 	"use strict";
